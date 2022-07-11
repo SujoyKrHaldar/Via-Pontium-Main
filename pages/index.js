@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Layout from "../components/layout/Layout";
+import Landing from "../components/static/home/Landing";
 import { getAllProjects } from "../config/query";
 import { sanityClient } from "../config/sanity";
 
@@ -13,7 +15,6 @@ export const getServerSideProps = async () => {
 };
 
 export default function Home({ projects }) {
-  console.log(projects);
   return (
     <>
       <Head>
@@ -22,7 +23,9 @@ export default function Home({ projects }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="bg-green-500">Hello world</h1>
+      <Layout>
+        <Landing />
+      </Layout>
     </>
   );
 }
