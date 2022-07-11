@@ -5,7 +5,8 @@ function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <div className="border-[1rem] border-white w-full h-full">{children}</div>
+      <div className="fixed inset-0 border-[1rem] border-white w-screen h-screen z-50 pointer-events-none"></div>
+      {children}
       <Footer />
     </>
   );

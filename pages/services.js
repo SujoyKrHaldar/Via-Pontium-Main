@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
-import Landing from "../components/static/home/Landing";
-import ProjectList from "../components/static/home/ProjectList";
+import ServiceLanding from "../components/static/service/ServiceLanding";
 import { getAllProjects } from "../config/query";
 import { sanityClient } from "../config/sanity";
 
@@ -15,18 +14,17 @@ export const getServerSideProps = async () => {
   };
 };
 
-export default function Home({ projects }) {
+export default function Service({ projects }) {
   return (
     <>
       <Head>
-        <title>Welcome to Via Pontium</title>
+        <title>Service - Via Pontium</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout>
-        <Landing />
-        <ProjectList project={projects} />
+        <ServiceLanding />
       </Layout>
     </>
   );
