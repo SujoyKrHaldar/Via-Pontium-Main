@@ -11,7 +11,7 @@ const nextConfig = {
     return [
       {
         source: "/dashboard",
-        destination: "https://www.google.com",
+        destination: "https://dashboard-viapontium.vercel.app/desk",
         permanent: true,
       },
     ];
