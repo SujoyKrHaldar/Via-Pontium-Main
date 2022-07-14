@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
 import Landing from "../components/static/home/Landing";
+import Objective from "../components/static/home/Objective";
 import ProjectList from "../components/static/home/ProjectList";
 import { getAllProjects } from "../config/query";
 import { sanityClient } from "../config/sanity";
@@ -26,6 +27,7 @@ export default function Home({ projects }) {
 
       <Layout>
         <Landing />
+        <Objective />
         <ProjectList project={projects} />
       </Layout>
     </>
