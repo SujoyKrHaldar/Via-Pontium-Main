@@ -13,9 +13,9 @@ function Objective() {
               alt="Landing bridge"
             />
           </div>
-          <div className="flex-1 p-8 space-y-3">
-            <p className="font-bold">Our Objective</p>
-            <h2 className="text-[#3f75c1] font-bold">
+          <div className="flex-1 max-w-[710px] p-8 space-y-3">
+            <p>Our Objective</p>
+            <h2 className="font-bold">
               Project objectives, Clients’ satisfaction and serving the
               community are always at the core of VPES’s priorities and it
               strongly responds to the project objective through its vast
