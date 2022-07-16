@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 function LandingImage() {
   return (
     <>
-      <div className="w-full h-[500px] z-10">
+      <div className="w-full h-[400px] md:h-[500px] z-10">
         <div
           className="bg-white p-2 rounded-full text-2xl flex items-center 
           absolute -top-6 left-1/2 -translate-x-1/2 z-20 drop-shadow-xl"

@@ -5,15 +5,15 @@ function Objective() {
   return (
     <>
       <section className="py-16 bg-white">
-        <div className="absolute h-full top-0 right-0 w-full max-w-[76%] bg-gray-200"></div>
-        <Container className="flex items-center justify-between gap-8">
-          <div className="flex-1 w-full h-[500px] max-w-[360px] p-8 bg-white shadow-xl">
+        <div className="absolute h-full top-0 right-0 w-[35%] xl:w-[76%] bg-gray-100"></div>
+        <Container className="xl:flex items-center justify-between gap-8">
+          <div className="flex-1 w-full h-[300px] md:h-[500px] xl:max-w-[360px] p-8 bg-white shadow-xl">
             <Img
               src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
               alt="Landing bridge"
             />
           </div>
-          <div className="flex-1 max-w-[710px] p-8 space-y-3">
+          <div className="flex-1 xl:max-w-[710px] mt-8 xl:mt-0 xl:p-8 space-y-3">
             <p>Our Objective</p>
             <h2 className="font-bold">
               Project objectives, Clients’ satisfaction and serving the

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-function Img({ src, alt, className = "", position, objFit }) {
+function Img({ src, alt, className = "", w, h, layout, position, objFit }) {
   const [isLoading, setLoading] = useState(true);
 
   return (
@@ -10,7 +10,9 @@ function Img({ src, alt, className = "", position, objFit }) {
       alt={alt}
       objectFit={objFit || "cover"}
       objectPosition={position || "center"}
-      layout="fill"
+      layout={layout || "fill"}
+      height={h}
+      width={w}
       loading="eager"
       className={`${className} duration-1000
               ${

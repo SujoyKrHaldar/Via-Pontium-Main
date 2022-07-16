@@ -4,7 +4,7 @@ import LandingImage from "./components/LandingImage";
 function Landing() {
   return (
     <>
-      <section className="py-24 bg-white">
+      <section className="py-24 md:h-auto bg-white">
         <Container>
           <div className="max-w-[37rem] py-16 text-center mx-auto space-y-3 z-20">
             <p className="font-bold">Welcome to Via Pontium</p>

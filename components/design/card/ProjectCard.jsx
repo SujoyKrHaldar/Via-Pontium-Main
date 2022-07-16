@@ -5,7 +5,7 @@ import Img from "../../tools/Img";
 function ProjectCard({ data }) {
   return (
     <>
-      <div className="p-4 w-full h-auto bg-gray-100 space-y-2">
+      <div className="w-full h-auto bg-white">
         {data?.coverPhoto && (
           <div className="bg-black w-full h-[200px]">
             <Img
@@ -15,7 +15,7 @@ function ProjectCard({ data }) {
             />
           </div>
         )}
-        <div className="space-y-2 p-4">
+        <div className="space-y-2 p-8">
           <p className=" font-bold lowercase first-letter:capitalize">
             {data.title}
           </p>

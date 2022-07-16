@@ -5,7 +5,7 @@ import Container from "../../layout/Container";
 function ProjectList({ project }) {
   return (
     <>
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <Container>
           <h2 className="font-bold">Our works</h2>
 

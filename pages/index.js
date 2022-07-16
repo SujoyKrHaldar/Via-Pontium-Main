@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
+import About from "../components/static/home/About";
+import Blogs from "../components/static/home/Blogs";
 import Landing from "../components/static/home/Landing";
 import Objective from "../components/static/home/Objective";
 import ProjectList from "../components/static/home/ProjectList";
+import Services from "../components/static/home/Services";
 import { getAllProjects } from "../config/query";
 import { sanityClient } from "../config/sanity";
 
@@ -27,7 +30,10 @@ export default function Home({ projects }) {
 
       <Layout>
         <Landing />
+        {/* <About /> */}
         <Objective />
+        <Services />
+        <Blogs />
         <ProjectList project={projects} />
       </Layout>
     </>
