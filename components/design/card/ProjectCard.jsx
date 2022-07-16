@@ -16,18 +16,17 @@ function ProjectCard({ data }) {
           </div>
         )}
         <div className="space-y-2 p-8">
-          <p className=" font-bold lowercase first-letter:capitalize">
-            {data.title}
-          </p>
           <div className="flex items-center justify-between gap-4">
+            <p className="text-base">{data?.status}</p>
             <p className="text-base">
               <Moment format="DD MMM YYYY">
                 {data?.publishedAt || data.createdAt}
               </Moment>
             </p>
-
-            <p className="text-base">{data?.status}</p>
           </div>
+          <p className=" font-bold lowercase first-letter:capitalize">
+            {data.title}
+          </p>
 
           <p
             onClick={() => alert(JSON.stringify(data))}

@@ -30,7 +30,7 @@ export default function Home({ projects }) {
 
       <Layout>
         <Landing />
-        {/* <About /> */}
+        <About />
         <Objective />
         <Services />
         <Blogs />

@@ -1,4 +1,5 @@
 import BlogCard from "../../design/card/BlogCard";
+import Button from "../../design/others/Button";
 import Container from "../../layout/Container";
 
 function Blogs() {
@@ -16,6 +17,8 @@ function Blogs() {
             <BlogCard />
             <BlogCard />
           </div>
+
+          <Button href="/blogs" text="View more" />
         </Container>
       </section>
     </>
