@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
-
 import Container from "./Container";
 import Img from "../tools/Img";
 import { useState } from "react";
@@ -24,7 +23,7 @@ const navLink = [
 
   {
     name: "Project",
-    url: "/",
+    url: "/projects",
   },
 
   {
