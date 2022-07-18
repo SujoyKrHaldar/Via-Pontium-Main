@@ -49,7 +49,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed inset-0 w-full h-fit py-4 z-50 bg-white">
+      <header className="fixed inset-0 w-full h-fit py-4 z-50 bg-white">
         <Container className="flex items-center justify-between gap-4">
           <Link href="/">
             <div className="w-[130px] h-[65px] cursor-pointer">
@@ -74,7 +74,7 @@ function Navbar() {
             {open ? <IoClose /> : <BiMenuAltRight />}
           </div>
         </Container>
-      </nav>
+      </header>
 
       {open && (
         <nav className="fixed inset-0 w-screen h-screen z-30 bg-white ">
